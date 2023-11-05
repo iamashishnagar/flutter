@@ -1,16 +1,40 @@
-# Flutter Application 1
+# Flutter PowerPoint Viewer App
 
-A new Flutter project.
+![Flutter Version](https://img.shields.io/badge/Flutter-2.5.0-blue.svg)
+![Dart Version](https://img.shields.io/badge/Dart-2.14.0-blue.svg)
 
-## Getting Started
+A Flutter app that allows users to select and view PowerPoint (PPT/PPTX) files on their mobile devices. This app uses the "power_file_view" package to provide a seamless PowerPoint viewing experience.
 
-This project is a starting point for a Flutter application.
+## Features
 
-A few resources to get you started if this is your first Flutter project:
+- Select PowerPoint files (PPT/PPTX) from your device.
+- View the selected PowerPoint files within the app.
+- Navigate between the home screen and the PowerPoint viewer screen.
+- Access additional sections via the menu drawer (e.g., About, FAQs, Contact).
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Usage
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Launch the app, and you will be presented with the home screen.
+Tap the "Choose File" button to select a PowerPoint file (PPT/PPTX) from your device.
+The selected file will be displayed in the PowerPoint viewer screen, where you can view its content.
+Use the app bar options to navigate between screens and access different sections.
+
+## Screenshots
+
+## Dependencies
+
+power_file_view: A Flutter package for viewing various document file formats, including PowerPoint presentations.
+
+## Contributing
+Contributions are welcome! If you have any ideas, bug fixes, or improvements, please open an issue or create a pull request.
+
+## License
+
+
+## Acknowledgments
+
+Special thanks to the Flutter and Dart communities for their support and contributions.
+
+## Contact
+
+For any questions or inquiries, please contact.
