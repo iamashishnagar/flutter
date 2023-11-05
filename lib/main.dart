@@ -1,6 +1,7 @@
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:file_picker/file_picker.dart';
+import 'package:flutter_application_1/view_file.dart';
 import 'second_page.dart';
 import 'custom_scaffold.dart';
 
@@ -115,10 +116,20 @@ class HomeScreen extends StatelessWidget {
 
       if (result != null) {
         String filePath = result.files.single.path!;
-        // Handle the selected file (filePath) as needed
         if (kDebugMode) {
+          // Handle the selected file (filePath) as needed
           print('Selected file path: $filePath');
         }
+        // Navigate to the PowerPoint viewer page
+        // ignore: use_build_context_synchronously
+        Navigator.of(context).push(
+          MaterialPageRoute(
+            builder: (context) => PowerFileViewPage(
+              downloadUrl: filePath,
+              downloadPath: filePath, // You can specify a local path if needed
+            ),
+          ),
+        );
       } else {
         // User canceled the file picker
         if (kDebugMode) {
